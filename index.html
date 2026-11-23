@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LocalTone - Reply like a local</title>
+<meta name="description" content="A Chrome extension that drafts natural replies and posts for social media in other languages, with translations and nuance notes.">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+:root{--ink:#0f172a;--sub:#475569;--line:#dbe5e0;--green:#047857;--soft:#f0fdf4}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:#fff;line-height:1.6;word-break:keep-all}
+html[lang=en] span[lang=ko],html[lang=ko] span[lang=en]{display:none}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;gap:10px;padding:18px 0;font-weight:800;font-size:18px}
+header img{width:32px;height:32px}
+.lang{margin-left:auto;display:flex;gap:4px}
+.lang button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+html[lang=en] [data-l=en],html[lang=ko] [data-l=ko]{background:var(--ink);color:#fff}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:48px 0 72px}
+h1{font-size:clamp(34px,5.4vw,54px);line-height:1.12;letter-spacing:-.025em;margin:0 0 18px;text-wrap:balance}
+h2{font-size:26px;letter-spacing:-.01em;margin:0 0 22px}
+h3{font-size:17px;margin:0 0 4px}
+p{margin:0}.sub{color:var(--sub);font-size:18px;margin-bottom:26px}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:10px}
+.btn:hover{background:#065f46}
+.fine{color:var(--sub);font-size:14px;margin-top:12px}
+.demo{background:var(--soft);border:1px solid #bbf7d0;border-radius:16px;padding:20px}
+.post{font-size:15px;padding:0 2px 14px;color:var(--sub)}
+.reply{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;font-size:15px}
+.reply+.reply{margin-top:8px}.reply small{display:block;color:var(--sub);font-size:13.5px;margin-top:6px;border-top:1px solid #eef2f0;padding-top:6px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:0;margin:0;list-style:none;counter-reset:s}
+.three p{color:var(--sub);font-size:15px}
+.steps li{counter-increment:s}.steps li:before{content:counter(s);display:block;color:var(--green);font-weight:800;font-size:22px;margin-bottom:4px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plan{border:1px solid var(--line);border-radius:16px;padding:24px}.plan.pro{border:2px solid var(--green)}
+.price{font-size:28px;font-weight:800;margin:2px 0 10px}.price small{font-size:15px;font-weight:500;color:var(--sub)}
+.plan ul{margin:0;padding-left:20px;color:var(--sub)}
+footer{border-top:1px solid var(--line);padding:26px 0 48px;font-size:14px;color:var(--sub);display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:inherit}
+:focus-visible{outline:3px solid #34d399;outline-offset:2px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:32px;padding:28px 0 48px}.three,.plans{grid-template-columns:1fr}section{padding:40px 0}}
+</style>
+</head>
+<body>
+<div class="w">
+<header><img src="data:image/png;base64,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" alt="">LocalTone<div class="lang"><button data-l="en">English</button><button data-l="ko">한국어</button></div></header>
+<main>
+<div class="hero">
+<div>
+<h1><span lang="en">Reply like a local, in any community</span><span lang="ko">해외 댓글도 현지인처럼</span></h1>
+<p class="sub"><span lang="en">LocalTone is a Chrome side panel that drafts natural replies for Threads, Reddit, X, Instagram and TikTok, with translations in your language.</span><span lang="ko">LocalTone은 Threads, Reddit, X, Instagram, TikTok에 쓸 자연스러운 답글을 번역과 함께 만들어주는 크롬 사이드패널이에요.</span></p>
+<a class="btn" href="https://chromewebstore.google.com/detail/mbmpofmehephnkgalcinejeepcechbfn"><span lang="en">Get it on the Chrome Web Store</span><span lang="ko">크롬 웹스토어에서 보기</span></a>
+<p class="fine"><span lang="en">From version 5.1.0: free, 5 uses a day. No sign-up or API key.</span><span lang="ko">5.1.0 버전부터: 하루 5회 무료. 가입이나 API 키가 필요 없어요.</span></p>
+</div>
+<div class="demo">
+<p class="post">“unpopular opinion: posting every day is the fastest way to hate the thing you used to love”</p>
+<div class="reply">fr this. i dropped to 3 times a week and somehow it got way more fun lol. how often are you posting now?<small>진짜 공감. 주 3회로 줄였더니 어쩐지 훨씬 재밌어졌어 ㅋㅋ. 지금은 얼마나 자주 올리고 있어?</small></div>
+<div class="reply">this is so real. i went down to 3 times a week and it became fun again. have you tried a slower schedule, or are you still posting daily?<small>이거 정말 공감돼. 주 3회로 줄였더니 다시 재밌어졌어. 더 느슨한 일정을 시도해 봤어, 아니면 아직 매일 올리고 있어?</small></div>
+<p class="fine"><span lang="en">Sample post, with real drafts made by LocalTone from a Korean note</span><span lang="ko">예시 글에 한국어 메모를 넣어 LocalTone이 실제로 만든 초안</span></p>
+</div>
+</div>
+<section><h2><span lang="en">How it works</span><span lang="ko">사용 방법</span></h2><ol class="three steps"><li><h3><span lang="en">Grab</span><span lang="ko">가져오기</span></h3><p><span lang="en">Click the post or comment you want to reply to.</span><span lang="ko">답글을 달 글이나 댓글을 클릭해요.</span></p></li><li><h3><span lang="en">Say it your way</span><span lang="ko">편하게 적기</span></h3><p><span lang="en">Type your point in your own language, or leave it empty.</span><span lang="ko">하고 싶은 말을 내 언어로 적어요. 비워둬도 돼요.</span></p></li><li><h3><span lang="en">Pick and paste</span><span lang="ko">골라 붙여넣기</span></h3><p><span lang="en">Get 3 drafts with translations. Edit, copy and paste one yourself.</span><span lang="ko">번역이 붙은 초안 3개를 받아요. 다듬고 복사해서 직접 붙여넣어요.</span></p></li></ol></section>
+<section><h2><span lang="en">Why LocalTone</span><span lang="ko">LocalTone이 다른 점</span></h2><ul class="three"><li><h3><span lang="en">Tone for each community</span><span lang="ko">커뮤니티마다 다른 말투</span></h3><p><span lang="en">Casual on Threads, informative on Reddit, short on X and TikTok.</span><span lang="ko">Threads는 가볍게, Reddit은 정보 중심으로, X와 TikTok은 짧게 써요.</span></p></li><li><h3><span lang="en">Meaning, not just words</span><span lang="ko">뜻과 뉘앙스까지</span></h3><p><span lang="en">See the translation plus a short note on slang and context.</span><span lang="ko">번역과 함께 슬랭과 맥락을 짧게 풀어줘요.</span></p></li><li><h3><span lang="en">You stay in control</span><span lang="ko">올리는 건 내가 직접</span></h3><p><span lang="en">LocalTone never posts for you. Check every draft before you use it.</span><span lang="ko">자동으로 올리지 않아요. 초안은 직접 확인하고 써요.</span></p></li></ul></section>
+<section id="pricing"><h2><span lang="en">Pricing</span><span lang="ko">요금</span></h2><div class="plans">
+<div class="plan"><h3><span lang="en">Free</span><span lang="ko">무료</span></h3><div class="price">$0</div><ul><li><span lang="en">5 uses a day</span><span lang="ko">하루 5회</span></li><li><span lang="en">First edit of each new set is free</span><span lang="ko">새로 만들 때마다 첫 수정 1회 무료</span></li><li><span lang="en">No sign-in</span><span lang="ko">로그인 없이 사용</span></li></ul></div>
+<div class="plan pro"><h3>Pro</h3><div class="price">$6.99 <small><span lang="en">/ month, early bird</span><span lang="ko">/ 월, 얼리버드</span></small></div><ul><li><span lang="en">100 uses a day</span><span lang="ko">하루 100회</span></li><li><span lang="en">Works on your other PCs with the same Google account</span><span lang="ko">같은 Google 계정이면 다른 PC에서도 사용</span></li><li><span lang="en">Cancel anytime</span><span lang="ko">언제든 해지</span></li></ul></div>
+</div><p class="fine"><span lang="en">Taxes may be added. Pro is available from version 5.1.0, inside the side panel. Payments are handled by Polar.</span><span lang="ko">지역에 따라 세금이 붙을 수 있어요. Pro는 5.1.0 버전부터 사이드패널에서 시작할 수 있고, 결제는 Polar가 처리해요.</span></p></section>
+</main>
+<footer><a href="terms.html"><span lang="en">Terms</span><span lang="ko">이용약관</span></a><a href="privacy-policy.html"><span lang="en">Privacy Policy</span><span lang="ko">개인정보처리방침</span></a><a href="mailto:localtone26@gmail.com">localtone26@gmail.com</a></footer>
+</div>
+<script>
+function set(l){document.documentElement.lang=l}
+document.querySelectorAll('[data-l]').forEach(function(x){x.onclick=function(){set(x.dataset.l)}});
+if((navigator.language||'').indexOf('ko')===0)set('ko');
+</script>
+</body>
+</html>
