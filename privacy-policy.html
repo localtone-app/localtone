@@ -13,57 +13,69 @@
 </head>
 <body>
 <h1>LocalTone Privacy Policy</h1>
-<p class="muted">Last updated: November 11, 2026</p>
+<p class="muted">Last updated: November 23, 2026</p>
+<p class="muted">Applies to version 5.1.0 and later. Earlier versions send your text directly from your browser to the Google Gemini API with your own API key, and do not use the LocalTone server, sign-in or payments.</p>
 
 <h2>What the extension does</h2>
-<p>LocalTone is a Chrome side-panel extension that helps you write replies on social platforms (Threads, Reddit, X, Instagram, TikTok). When you click "Grab", it reads the text of the post or comment you select, and when you click "Generate" or "Translate", it sends that text to Google's Gemini API to produce reply suggestions and translations.</p>
+<p>LocalTone is a Chrome side-panel extension that helps you write replies and posts for social platforms. When you click "Grab", it reads the text of the post or comment you select. When you generate, edit or translate, that text is sent through the LocalTone server to Anthropic's Claude API to produce the result. If you turn on automatic generation in Settings, it is sent right after you grab a comment.</p>
 
 <h2>Data we handle</h2>
 <ul>
-  <li><b>Text you select on a page</b> (a post or comment), and the instructions you type in the panel.</li>
-  <li><b>Settings you enter</b>: your Gemini API key, language preferences, profile description and promo information.</li>
+  <li><b>Text</b>: the post or comment you grab, the instructions you type, previous drafts when you edit them, and the language, profile and promo settings needed for the request.</li>
+  <li><b>Usage limits</b>: a random ID created for your installation, daily usage counts, and a one-way hash of your IP address used to prevent abuse.</li>
+  <li><b>Google sign-in (Pro only)</b>: your Google account ID and email address. The free version does not require sign-in.</li>
+  <li><b>Subscription (Pro only)</b>: whether your account has an active Pro subscription. Card details are entered on the payment provider's page and never reach LocalTone.</li>
 </ul>
-<p>We do <b>not</b> collect browsing history, account credentials, cookies, or any data from pages you did not explicitly grab.</p>
+<p>We do <b>not</b> collect browsing history, cookies, passwords, or any data from pages you did not explicitly grab.</p>
 
-<h2>Where data goes</h2>
+<h2>Where data goes and how long it is kept</h2>
 <ul>
-  <li><b>Stored locally:</b> settings and the last grabbed post are stored only in your browser's local storage on your device. The developer has no server and cannot see them.</li>
-  <li><b>Sent to Google:</b> when you request a reply or translation, the selected text, your instructions and the relevant settings are sent directly from your browser to the Google Gemini API (generativelanguage.googleapis.com) using your own API key. That processing is governed by <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google's Gemini API Terms</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Note that on Google's free tier, Google may use submitted content to improve its products.</li>
-  <li>No data is sold, shared with third parties, or used for advertising.</li>
+  <li><b>Your browser</b>: settings, the last grabbed post, the installation ID and your sign-in session are stored in the extension's local storage. If you entered a Gemini API key in an older version, it may remain there but is no longer used or sent. Uninstalling the extension removes this data.</li>
+  <li><b>LocalTone server (hosted on Cloudflare)</b>: passes your text on and does not store it. Daily usage counts and hashed IP addresses are cleared on the first use after the date changes (UTC). For Pro, your Google account ID and subscription status are kept so that Pro keeps working across devices, until you ask us to delete them.</li>
+  <li><b>Anthropic</b>: processes your text to generate results, under its <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Privacy Policy</a> and commercial terms.</li>
+  <li><b>Google</b>: used to sign you in, under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+  <li><b>Polar</b> (and its payment processors): receives your email address and Google account ID, and processes payments, under its <a href="https://polar.sh/legal/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</li>
 </ul>
+<p>We do not sell your data or use it for advertising. The use of information received from Google APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" target="_blank" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. These providers may process data outside your country.</p>
 
 <h2>Your control</h2>
-<p>You can clear any field in the panel at any time. Uninstalling the extension deletes all locally stored data.</p>
+<p>You can clear fields, sign out, or uninstall at any time, and cancel Pro in "Manage". To ask for a copy or deletion of the data on our server, email us.</p>
 
 <h2>Contact</h2>
-<p>Questions: <a href="mailto:chszz0723@gmail.com">chszz0723@gmail.com</a></p>
+<p><a href="mailto:localtone26@gmail.com">localtone26@gmail.com</a></p>
 
 <hr>
 
 <h1>LocalTone 개인정보처리방침</h1>
-<p class="muted">최종 수정일: 2026년 11월 11일</p>
+<p class="muted">최종 수정일: 2026년 11월 23일</p>
+<p class="muted">5.1.0 버전부터 적용됩니다. 이전 버전은 사용자 본인의 API 키로 글을 브라우저에서 Google Gemini API로 직접 보내며, LocalTone 서버·로그인·결제를 사용하지 않습니다.</p>
 
 <h2>확장 프로그램의 기능</h2>
-<p>LocalTone은 SNS(Threads, Reddit, X, Instagram, TikTok)에서 댓글 작성을 돕는 크롬 사이드패널 확장 프로그램입니다. 사용자가 [가져오기]를 누르면 선택한 게시글·댓글의 텍스트를 읽고, [생성]이나 [번역]을 누르면 그 텍스트를 Google Gemini API로 보내 댓글 추천과 번역을 받습니다.</p>
+<p>LocalTone은 SNS의 댓글과 글 작성을 돕는 크롬 사이드패널 확장 프로그램입니다. [가져오기]를 누르면 선택한 게시글·댓글의 텍스트를 읽습니다. 생성·수정·번역을 요청하면 그 텍스트를 LocalTone 서버를 거쳐 Anthropic의 Claude API로 보내 결과를 받습니다. 설정에서 자동 생성을 켜면 댓글을 가져온 직후 전송됩니다.</p>
 
 <h2>처리하는 정보</h2>
 <ul>
-  <li>사용자가 페이지에서 직접 선택한 글(게시글·댓글)과 패널에 입력한 요청 내용</li>
-  <li>사용자가 입력한 설정값: Gemini API 키, 언어 설정, 프로필 소개, 홍보 정보</li>
+  <li><b>글</b>: 가져온 게시글·댓글, 입력한 요청, 수정할 때의 이전 초안, 요청에 필요한 언어·프로필·홍보 설정</li>
+  <li><b>사용 한도</b>: 설치할 때 만든 무작위 ID, 하루 사용 횟수, 남용을 막기 위해 되돌릴 수 없게 바꾼 IP 주소(해시)</li>
+  <li><b>Google 로그인(Pro만)</b>: Google 계정 고유번호와 이메일 주소. 무료 버전은 로그인이 필요 없습니다.</li>
+  <li><b>구독(Pro만)</b>: Pro 구독 여부. 카드 정보는 결제 서비스 화면에서 입력하며 LocalTone에 전달되지 않습니다.</li>
 </ul>
-<p>방문 기록, 계정 정보, 쿠키, 사용자가 직접 가져오지 않은 페이지 내용은 수집하지 않습니다.</p>
+<p>방문 기록, 쿠키, 비밀번호, 사용자가 직접 가져오지 않은 페이지 내용은 수집하지 않습니다.</p>
 
-<h2>정보의 저장과 전송</h2>
+<h2>정보의 전송과 보관</h2>
 <ul>
-  <li><b>로컬 저장:</b> 설정값과 마지막으로 가져온 원문은 사용자 기기의 브라우저 저장소에만 저장됩니다. 개발자는 별도 서버를 운영하지 않으며 이 정보에 접근할 수 없습니다.</li>
-  <li><b>Google 전송:</b> 댓글 생성·번역을 요청하면 선택한 텍스트, 요청 내용, 관련 설정이 사용자 본인의 API 키로 브라우저에서 Google Gemini API로 직접 전송됩니다. 해당 처리는 Google의 Gemini API 약관과 개인정보처리방침을 따릅니다. Google 무료 등급에서는 전송된 내용이 Google 제품 개선에 사용될 수 있습니다.</li>
-  <li>정보를 판매하거나 제3자에게 제공하거나 광고에 사용하지 않습니다.</li>
+  <li><b>사용자의 브라우저</b>: 설정값, 마지막으로 가져온 원문, 설치 ID, 로그인 정보를 저장합니다. 이전 버전에서 입력한 Gemini API 키가 남아 있을 수 있지만 더 이상 사용하거나 전송하지 않습니다. 확장 프로그램을 삭제하면 지워집니다.</li>
+  <li><b>LocalTone 서버(Cloudflare)</b>: 글을 전달만 하고 저장하지 않습니다. 하루 사용 횟수와 IP 해시는 날짜(세계 표준시)가 바뀐 뒤 첫 사용 때 지워집니다. Pro의 Google 계정 고유번호와 구독 상태는 여러 기기에서 Pro를 쓸 수 있도록 삭제 요청 시까지 보관합니다.</li>
+  <li><b>Anthropic</b>: 결과를 만들기 위해 글을 처리합니다(<a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">개인정보처리방침</a> 및 상업용 약관).</li>
+  <li><b>Google</b>: 로그인을 처리합니다(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">개인정보처리방침</a>).</li>
+  <li><b>Polar 및 결제 처리사</b>: 이메일 주소와 Google 계정 고유번호를 받아 결제를 처리합니다(<a href="https://polar.sh/legal/privacy" target="_blank" rel="noopener">개인정보처리방침</a>).</li>
 </ul>
+<p>정보를 판매하거나 광고에 사용하지 않습니다. Google API로 받은 정보는 제한적 사용(Limited Use) 요건을 포함한 Chrome 웹스토어 사용자 데이터 정책에 따라 사용합니다. 위 업체들은 사용자의 국가 밖에서 정보를 처리할 수 있습니다.</p>
 
 <h2>사용자의 권리</h2>
-<p>패널의 모든 입력값은 언제든 지울 수 있으며, 확장 프로그램을 삭제하면 로컬에 저장된 모든 정보가 삭제됩니다.</p>
+<p>언제든 입력값을 지우고, 로그아웃하고, 확장 프로그램을 삭제할 수 있으며, [구독 관리]에서 Pro를 해지할 수 있습니다. 서버에 있는 정보의 열람·삭제는 이메일로 요청해 주세요.</p>
 
 <h2>문의</h2>
-<p>문의: <a href="mailto:chszz0723@gmail.com">chszz0723@gmail.com</a></p>
+<p><a href="mailto:localtone26@gmail.com">localtone26@gmail.com</a></p>
 </body>
 </html>
